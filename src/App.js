@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
+
+import ProfileImage from './components/ProfileImage';
+import PageContent from './components/PageContent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex-row" style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
+      <ProfileImage />
+      <Router>
+        <PageContent />
+      </Router>
     </div>
   );
 }
