@@ -4,8 +4,8 @@ const IMAGE_URL = require('../../assets/profile.jpg');
 
 const ProfileImage = () => {
   return (
-    <div className="flex background-one flex-row align-items-center justify-content-center" style={{ maxWidth: '40vw', height: '100%' }}>
-      <img className="flex" src={IMAGE_URL} alt="Angel Ip Profile" style={{ maxWidth: '50%', maxHeight: '50%' }}/>
+    <div className="flex background-one flex-row align-items-center justify-content-center" style={{ maxWidth: '35vw' }}>
+      <img className="" src={IMAGE_URL} alt="Angel Ip Profile" style={{ width: '70%', maxWidth: '20vw', height: 'auto',  }}/>
     </div>
   );
 };
