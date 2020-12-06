@@ -3,7 +3,7 @@ import React from 'react';
 const Index = () => {
   return (
     <div className="page-content pl-50 pr-50 pt-50">
-      <h2 className="mb-70">About Me</h2>
+      <h2 className="mb-70">ABOUT ME</h2>
       <p className="mb-20">
         Angel Ip was born in Hong Kong but has been raised and lived in the Settler City and State of Vancouver, BC, Canada for most of her life. Angel has completed two diplomas: Hospitality Management diploma at Vancouver Community College and Rehabilitation Assistant Diploma Program at Capilano University. After working in the retail and hospitality industries, Angel found her passion working with people; however, the work was not rewarding and meaningful enough for her. That is when she decided to transition into health care. Angel now works as a rehabilitation assistant in a long-term care home where she carries out recreational and exercise therapy programs to help improve the quality of life of the seniors.        </p>
       <p className="mb-20">

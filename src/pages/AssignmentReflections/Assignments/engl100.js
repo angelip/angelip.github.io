@@ -3,7 +3,7 @@ import React from 'react';
 const ENGL400Page = () => {
   return (
     <div className="page-content pl-50 pr-50 pt-50">
-      <h2 className="mb-20">ENGL 100-41 Argumentative Essay</h2>
+      <h2 className="mb-20">ENGL 100-41 ARGUMENTATIVE ESSAY</h2>
       <p className="mb-50">Posted on 2020-12-05</p>
       <p className="mb-20">
         In my ENGL 100-41 class, we were assigned an argumentative paper to write about in groups of three to five. We are to pick and build on one of the sources that the instructor has provided and come up with a thesis statement of our own. There are six paragraphs in the essay that can be divided among the team.  When it was time to discuss about the paper, I noticed the various personalities of our group. Having different perspectives can bring out fresh ideas onto the paper, but I sometimes find myself in a difficult situation with my group for having opposing opinions and group members taking on self-proclaimed roles. This group assignment taught me about conflict resolution and made me reflect on how I could have handled the situation differently.
