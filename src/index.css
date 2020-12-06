@@ -1,7 +1,7 @@
 :root {
-  --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana;
-  --secondary-font: 'Segoe UI', Tahoma, Geneva, Verdana;
-  --color-one: rgb(236, 70, 57);
+  --primary-font: 'Arial', 'Segoe UI', Tahoma, Geneva, Verdana;
+  --secondary-font: 'Arial', 'Segoe UI', Tahoma, Geneva, Verdana;
+  --color-one: #f1f1f1;
   --color-two: #6BC9F2;
   --color-three: #007096;
   --color-four: #1ab7ea;
@@ -10,7 +10,7 @@
   --color-light-grey: #f1f1f1;
   --color-grey: #808080;
 
-  --header-height: 100px;
+  --header-height: 300px;
 }
 
 
@@ -568,6 +568,9 @@ a {
 .justify-content-start {
   justify-content: start;
 }
+.justify-content-end {
+  justify-content: end;
+}
 .justify-content-space-around {
   justify-content: space-around;
 }
@@ -633,21 +636,13 @@ a {
   margin-top: -5%;
 }
 
-.bg-pic {
-  background-image: url('./assets/bg-2.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-origin: padding-box;
-  /* height: 80vh; */
-}
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   visibility: hidden;
   position: absolute;
   opacity: 0;
   z-index: 1;
+  color: black;
   transition: visibility 1s linear,opacity 0.3s linear;
 }
 
@@ -657,14 +652,10 @@ a {
   transition: visibility 1s linear,opacity 0.3s linear;
 }
 
-.page-content {
-  height: calc(100vh - var(--header-height));
-  margin-top: calc(-1 * var(--header-height));
-  
-}
-
-
 .content {
+  overflow-y: auto;
+  align-items: flex-start;
+
 }
 .content-enter {
   opacity: 0;
@@ -686,4 +677,47 @@ a {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-content {
+
+  }  
+}
+
+@media only screen and (min-width: 801px) {
+  .main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .bottom-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile-image {
+    max-width: 25vw;
+  }
+
+  .page-content {
+    height: calc(100vh - var(--header-height) - 50px);
+  }
+  
+}
+
+
+.bg-pic {
+  height: var(--header-height);
+  background-image: url('./assets/bg-2.jpg');
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-origin: content-box; */
 }
