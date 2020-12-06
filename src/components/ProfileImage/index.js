@@ -6,7 +6,7 @@ const ProfileImage = () => {
   return (
     <div className="flex background-light-grey profile-image p-20" style={{ minWidth: 250 }}>
       <div className="ml-40">
-        <h1 className="mb-10 mt-20 color-black" style={{ fontWeight: 600 }}>Angel Ip</h1>
+        <h1 className="mb-10 mt-20 color-black" style={{ fontWeight: 600 }}>ANGEL IP</h1>
         <h4 className="color-black">Rehabilitation Assistant</h4>
       </div>
       <div className="text-align-center page-content flex-column">
